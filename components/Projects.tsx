@@ -13,7 +13,7 @@ const projects = [
       "/images/please3.png",
       "/images/RLreal.png",
       "/images/RLtraining.png",
-      "/images/RLmap.png",
+      "/images/Rlmap.png",
     ],
     details: ["Reinforcement Learning", "Path Planning", "Simulation"],
   },
@@ -44,7 +44,7 @@ const projects = [
     title: "PLC-Based Stepper Motor Motion Control",
     description:
       "Industrial PLC system controlling stepper motor motion and positioning.",
-    images: ["/images/plc.png", "/images/motor.png"],
+    images: ["/images/PLC.png", "/images/motor.png"],
     details: ["PLC programming", "Motor control", "Automation"],
   },
   {
