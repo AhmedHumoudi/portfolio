@@ -27,20 +27,32 @@ export default function Hero() {
         </h1>
 
         {/* TITLE */}
-        <p className="text-3xl md:text-4xl text-slate-600 mb-6">
+        <p className="text-3xl md:text-4xl font-bold mb-5 text-slate-600 mb-6">
           Robotics & Automation Systems Engineer
         </p>
+        <p className="text-2xl md:text-3xl text-slate-600 mb-4">
+  This portfolio expands on my CV, providing a more detailed view of my work, including projects, education, experience, and coursework, supported by photos and documents.
+</p>
 
-        {/* DESCRIPTION */}
-       
-        {/* BUTTON */}
-        <a
-          href="/Ahmed Humoudi CV.pdf"
-          download
-          className="px-7 py-3 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition"
-        >
-          Download CV
-        </a>
+        {/* BUTTONS */}
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+
+          <a
+            href="/Ahmed Humoudi CV.pdf"
+            download
+            className="px-7 py-3 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition"
+          >
+            Download CV
+          </a>
+
+          <a
+            href="#projects"
+            className="px-7 py-3 text-xl border border-slate-400 rounded-xl bg-slate-900 text-white hover:bg-slate-700 transition"
+          >
+            View Projects
+          </a>
+
+        </div>
 
       </div>
     </section>

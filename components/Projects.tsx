@@ -25,6 +25,7 @@ const projects = [
     "/images/mechaflyer.jpeg",
     "/images/realrobot.png",
     "/images/robots.jpg",
+    "/images/3robot.png"
   ],
   details:
     "Developed a centralized ROS 2 multi-robot coordination system enabling autonomous swarm robots to collaboratively transport and place boxes in a shared environment. The system implemented formation control, obstacle avoidance, and real-time navigation while maintaining synchronized robot movement and task execution. Micro-ROS on ESP32 modules was used for communication between the robots and the central ROS 2 system. The robots utilized mecanum wheels for omnidirectional mobility and custom forklift mechanisms for pick-and-place functionality. The system was further tested successfully using a real-world robot and environment implementation.",
@@ -145,15 +146,13 @@ export default function Projects() {
 
     return (
       <div className="relative w-full">
-        <div className="relative w-full h-[600px] rounded-2xl overflow-hidden border border-slate-300">
+      <div className="relative w-full h-[200px] md:h-[500px] rounded-2xl overflow-hidden border border-slate-300">
           <Image
             src={project.images[imgIdx]}
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className={
-              project.special ? "object-contain" : "object-cover"
-            }
+          className="object-contain"
           />
         </div>
 

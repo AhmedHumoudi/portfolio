@@ -63,6 +63,32 @@ export default function Education() {
                 </span>.
               </p>
 
+              {/* THESIS SECTION */}
+              <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+                <p className="text-slate-600 text-3xl leading-10">
+                  Bachelor Thesis:{" "}
+                  <span className="text-slate-900 font-semibold">
+                    Path Planning and Advanced
+Control for Robotic Systems in
+Dynamic Environments
+                  </span>{" "}
+                  — Grade:{" "}
+                  <span className="text-slate-900 font-semibold">
+                    A+ 
+                  </span>
+                </p> 
+
+                <a
+                  href="images/Bachelor Thesis.pdf"
+                  target="_blank"
+                  className="px-6 py-3 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition text-center whitespace-nowrap"
+                >
+                  View Thesis
+                </a>
+
+              </div>
+
             </div>
           </div>
 
