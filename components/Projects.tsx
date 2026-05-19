@@ -5,61 +5,105 @@ import Image from "next/image";
 
 const projects = [
   {
-    title:
-      "Reinforcement Learning-Based Path Planning for Warehouse Robots",
+    title: "Reinforcement Learning-Based Path Planning for Warehouse Robots",
     description:
-      "RL-based navigation system for robots in dynamic warehouse environments.",
+      "RL-based navigation system for autonomous warehouse robots operating in dynamic environments with obstacle avoidance and adaptive path planning.",
     images: [
       "/images/please3.png",
       "/images/RLreal.png",
       "/images/RLtraining.png",
       "/images/Rlmap.png",
     ],
-    details: ["Reinforcement Learning", "Path Planning", "Simulation"],
-  },
-  {
-    title: "Multi-Robot Task Formation",
-    description:
-      "Centralized ROS 2 system with formation control, path planning, and obstacle avoidance.",
-    images: [
-      "/images/mechaflyer.jpeg",
-      "/images/realrobot.png",
-      "/images/robots.jpg",
-    ],
-    details: [
-      "ROS 2 multi-robot coordination",
-      "Formation control",
-      "Real-time navigation",
-    ],
-    special: true,
-  },
-  {
+    details: "Implemented a Soft Actor-Critic (SAC) reinforcement learning algorithm with a complex reward system and deep neural networks. The robot platform is a mecanum-wheeled robot capable of omnidirectional movement, operating inside a simulated warehouse environment populated with moving, unknown obstacles. The system achieves real-time path planning and dynamic obstacle avoidance without prior knowledge of these obstacles. The system was further tested successfully using a real-world robot and environment implementation.",
+    keywords: ["Soft Actor-Critic (SAC)", "Reinforcement Learning", "Neural Networks", "Mecanum Robot", "Omnidirectional Movement", "Warehouse Simulation and Real World Implementation", "Real-Time Path Planning", "Dynamic Obstacle Avoidance"]
+  },
+{
+  title: "Multi-Robot Task Formation",
+  description:
+    "Centralized ROS 2 swarm robotics system for cooperative box pick-and-place operations using mecanum-wheeled robots with integrated forklifts.",
+  images: [
+    "/images/mechaflyer.jpeg",
+    "/images/realrobot.png",
+    "/images/robots.jpg",
+  ],
+  details:
+    "Developed a centralized ROS 2 multi-robot coordination system enabling autonomous swarm robots to collaboratively transport and place boxes in a shared environment. The system implemented formation control, obstacle avoidance, and real-time navigation while maintaining synchronized robot movement and task execution. Micro-ROS on ESP32 modules was used for communication between the robots and the central ROS 2 system. The robots utilized mecanum wheels for omnidirectional mobility and custom forklift mechanisms for pick-and-place functionality. The system was further tested successfully using a real-world robot and environment implementation.",
+  keywords: [
+    "ROS 2 multi-robot coordination",
+    "Formation control",
+    "Obstacle avoidance",
+    "Real-time navigation",
+    "Micro-ROS",
+    "ESP32 communication",
+    "Mecanum wheeled robots",
+    "Autonomous forklifts",
+  ],
+  special: true,
+},
+ {
     title: "UR5e Pick and Place",
     description:
-      "Integrated ROS 2, MoveIt 2, and RViz for robotic trajectory planning and manipulation.",
+      "ROS 2 and MATLAB-based robotic manipulation system featuring trajectory planning, object sorting, and autonomous pick-and-place operations.",
     images: ["/images/ur5e.png"],
-    details: ["MoveIt 2", "UR5e simulation", "RViz visualization"],
+    details:
+      "Developed a ROS 2 robotic manipulation system integrating MoveIt 2 and RViz for UR5e trajectory planning, motion execution, and visualization in simulated environments. The project focused on autonomous pick-and-place operations, inverse kinematics, and smooth robotic motion planning using ROS 2 tools and motion planning pipelines.\n\nAdditionally, a separate MATLAB implementation was developed. The MATLAB system utilized inverse kinematics, trajectory planning, object classification, and autonomous sorting behaviors for different object types and colors. The robot dynamically generated smooth trajectories between grasping, scanning, weighing, and sorting positions while maintaining safe motion transitions. The implementation also included scale-based object handling, bin selection logic, and real-time pose targeting for the UR5e robotic arm.",
+    keywords: [
+      "ROS 2",
+      "MoveIt 2",
+      "RViz visualization",
+      "UR5e trajectory planning",
+      "MATLAB Robotics Toolbox",
+      "Simulink",
+      "Inverse kinematics",
+      "Autonomous pick and place",
+      "Object sorting system",
+    ],
   },
-  {
-    title: "PLC-Based Stepper Motor Motion Control",
-    description:
-      "Industrial PLC system controlling stepper motor motion and positioning.",
-    images: ["/images/PLC.png", "/images/motor.png"],
-    details: ["PLC programming", "Motor control", "Automation"],
-  },
+    {
+  title: "PLC-Based Stepper Motor Motion Control",
+  description:
+    "Developed a motion control system using a Siemens S7-1200 PLC to control a stepper motor for precise speed, direction, and position control.",
+  images: ["/images/PLC.png", "/images/motor.png"],
+  details:
+    "Implemented a PLC-based motion control system using a Siemens S7-1200 to manage a stepper motor. The system enables precise control of speed, direction, and position through structured PLC programming and motion control function blocks. It supports both continuous motion (jogging) and accurate positional moves, demonstrating core industrial automation and motion control principles.",
+  keywords: [
+    "PLC Programming",
+    "Siemens S7-1200",
+    "Motion Control",
+    "Function Blocks",
+    "Stepper Motor Control",
+    "Position Control",
+    "Speed Control",
+    "Direction Control",
+    "Industrial Automation"
+  ],
+},
   {
     title: "Embedded Systems Project: Oven Control System",
     description:
       "ATmega32-based embedded system for temperature monitoring, fan control, and safety lock system.",
     images: [],
-    details: ["ATmega32", "Temperature sensing", "Embedded control"],
+    details:
+      "Designed and implemented a full oven control system on an ATmega32 microcontroller. The system continuously monitors internal temperature via a sensor and automatically activates a fan when a set threshold is exceeded. A safety lock mechanism prevents the oven from operating under unsafe conditions. The project involved low-level embedded C programming, interrupt handling, and peripheral interfacing including ADC for temperature reading and GPIO for actuator control.",
+    keywords: [
+      "Microcontroller",
+      "ATmega32",
+      "Embedded C",
+    ],
   },
-  {
+ {
     title: "Ball and Beam Control System",
     description:
-      "Control system for stabilizing a ball on a beam using feedback control.",
+      "Classic control systems challenge: stabilizing a rolling ball at a target position on a beam using real-time feedback control.",
     images: [],
-    details: ["PID control", "Feedback system", "Stability analysis"],
+    details:
+      "Designed and tuned a PID controller to maintain a ball at a desired position on a freely rotating beam. The system reads the ball's position in real time and continuously adjusts the beam angle to correct any deviation from the setpoint. The project involved mathematical modeling of the system dynamics, transfer function derivation, and iterative PID tuning to achieve stable and responsive control with minimal steady-state error and overshoot.",
+    keywords: [
+      "PID Control",
+      "Feedback Control",
+      "System Modeling",
+      "Transfer Function",
+    ],
   },
 ];
 
@@ -101,7 +145,7 @@ export default function Projects() {
 
     return (
       <div className="relative w-full">
-        <div className="relative w-full h-[600px] rounded-2xl overflow-hidden border border-gray-200">
+        <div className="relative w-full h-[600px] rounded-2xl overflow-hidden border border-slate-300">
           <Image
             src={project.images[imgIdx]}
             alt={project.title}
@@ -117,14 +161,14 @@ export default function Projects() {
           <div className="flex justify-between mt-4">
             <button
               onClick={() => prevImage(index, project.images.length)}
-              className="px-5 py-2 border border-gray-300 rounded-xl hover:bg-black hover:text-white transition"
+              className="px-6 py-2.5 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition"
             >
               ←
             </button>
 
             <button
               onClick={() => nextImage(index, project.images.length)}
-              className="px-5 py-2 border border-gray-300 rounded-xl hover:bg-black hover:text-white transition"
+              className="px-6 py-2.5 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition"
             >
               →
             </button>
@@ -137,72 +181,77 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-white text-black py-16 px-6"
+      className="text-slate-900 py-16 px-6"
     >
       <div className="max-w-5xl mx-auto">
 
-        <h2 className="text-5xl font-bold mb-12">
+        <h2 className="text-6xl font-bold mb-12 text-slate-900">
           Projects
         </h2>
 
-        <div className="space-y-10">
+        <div className="space-y-6">
 
           {projects.map((project, index) => {
             const isOpen = openIndex === index;
-
-            const hasImages =
-              project.images && project.images.length > 0;
+            const hasImages = project.images && project.images.length > 0;
 
             return (
               <div
                 key={project.title}
-                className="border border-gray-200 rounded-2xl overflow-hidden hover:bg-gray-100 transition"
+                className="border border-slate-400/60 rounded-2xl overflow-hidden bg-white/70 backdrop-blur-sm hover:bg-white/90 transition"
               >
 
                 {/* HEADER */}
                 <button
-                  onClick={() =>
-                    setOpenIndex(isOpen ? null : index)
-                  }
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="w-full text-left p-8"
                 >
-                  <h3 className="text-3xl font-semibold">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-4xl font-semibold text-slate-900">
+                      {project.title}
+                    </h3>
+                    <span
+                      className="text-3xl text-slate-400 mt-1 flex-shrink-0 transition-transform duration-200"
+                      style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+                    >
+                      ↓
+                    </span>
+                  </div>
 
-                  <p className="text-gray-600 text-lg mt-4 leading-8">
+                  <p className="text-slate-600 text-3xl mt-4 leading-10">
                     {project.description}
                   </p>
 
-                  <p className="text-gray-500 mt-4 text-base">
-                    Click to view details
+                  <p className="text-slate-400 mt-4 text-xl">
+                    {isOpen ? "Hide details" : "Click to view details"}
                   </p>
                 </button>
 
                 {/* CONTENT */}
                 {isOpen && (
-                  <div className="px-8 pb-8 border-t border-gray-200">
-
+                  <div className="px-8 pb-8 border-t border-slate-300">
                     <div className="space-y-8 mt-8">
 
-                      <div>
-                        <h4 className="text-2xl font-semibold mb-5">
-                          Technical Details
-                        </h4>
+                      {/* IN-DEPTH TEXT */}
+                      <p className="text-slate-600 text-3xl leading-10">
+                        {project.details}
+                      </p>
 
-                        <ul className="space-y-3 text-gray-600 text-lg leading-8">
-                          {project.details.map((d, i) => (
-                            <li key={i}>• {d}</li>
-                          ))}
-                        </ul>
+                      {/* KEYWORD PILLS */}
+                      <div className="flex flex-wrap gap-3">
+                        {project.keywords.map((k, i) => (
+                          <span
+                            key={i}
+                            className="text-lg px-4 py-2 rounded-full bg-slate-200/80 text-slate-600 border border-slate-300"
+                          >
+                            {k}
+                          </span>
+                        ))}
                       </div>
 
                       {/* IMAGES */}
                       {hasImages && (
-                        <ImageSlider
-                          project={project}
-                          index={index}
-                        />
+                        <ImageSlider project={project} index={index} />
                       )}
 
                     </div>

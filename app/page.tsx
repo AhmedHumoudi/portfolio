@@ -10,7 +10,7 @@ import Courses from "@/components/Courses";
 
 export default function Home() {
   return (
-    <main className="bg-red-500">
+    <main className="bg-blue-200">
       <Navbar />
       <Hero />
       <About />
