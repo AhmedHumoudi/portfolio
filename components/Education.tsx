@@ -24,7 +24,7 @@ export default function Education() {
             </p>
 
             <p className="text-slate-400 text-xl mt-2">
-              Cairo, Egypt | 09/2022 – Present
+              Cairo, Egypt | 09/2022 – 07/2026
             </p>
 
             <div className="mt-6 space-y-4 text-slate-600 text-3xl leading-10">

@@ -13,6 +13,47 @@ export default function Experience() {
         </h2>
 
         <div className="space-y-6">
+{/* INTERN */}
+<div className="border border-slate-400/60 rounded-2xl p-8 bg-white/70 backdrop-blur-sm hover:bg-white/90 transition flex gap-6">
+
+  {/* LOGO */}
+ <div className="w-30 h-30 flex-shrink-0">
+  <Image
+    src="/images/mactech.png"
+    alt="Mactech Automation Solutions"
+    width={200}
+    height={200}
+    className="rounded-lg object-contain"
+  />
+</div>
+
+  {/* TEXT */}
+  <div>
+
+    <h3 className="text-4xl font-semibold text-slate-900">
+      Automation Engineering Intern
+    </h3>
+
+    <p className="text-2xl text-slate-500 mt-2">
+      Mactech Automation Solutions
+    </p>
+
+    <p className="text-xl text-slate-400 mt-1">
+      Jeddah, Saudi Arabia | 07/2026 – 08/2026
+    </p>
+
+    <p className="text-slate-600 text-3xl leading-10 mt-6">
+      Gained hands-on experience in industrial automation using Siemens TIA Portal,
+      programming S7-1500 PLCs and configuring ET 200SP distributed I/O systems.
+      Developed and simulated PLC control logic using PLCSIM with LAD and Function
+      Block programming, working with both digital and analog I/O. Developed HMI
+      applications, configured PROFINET communication and hardware, and implemented
+      PID control for process automation applications. Used TIA Portal monitoring
+      and diagnostic tools to test, troubleshoot, and validate PLC programs.
+    </p>
+
+  </div>
+</div>
 
           {/* INTERN */}
           <div className="border border-slate-400/60 rounded-2xl p-8 bg-white/70 backdrop-blur-sm hover:bg-white/90 transition flex gap-6">
