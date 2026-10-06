@@ -19,7 +19,7 @@ export default function Experience() {
   {/* LOGO */}
  <div className="w-30 h-30 flex-shrink-0">
   <Image
-    src="/images/mactech.png"
+    src="/images/Mactech.png"
     alt="Mactech Automation Solutions"
     width={200}
     height={200}
