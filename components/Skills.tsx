@@ -1,5 +1,17 @@
 const skills = [
-
+ {
+    category: "Industrial Automation",
+    items: [
+      "Siemens TIA Portal",
+      "Rockwell Studio 5000",
+      "PLCSIM",
+      "WinCC HMI",
+      "PROFINET",
+      "LAD",
+      "Function Blocks",
+      "PID Control",
+    ],
+  },
   {
     category: "AI & Robotics",
     items: [
