@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row gap-4 items-center">
 
           <a
-            href="/Ahmed Humoudi CV.pdf"
+            href="/Ahmed Khalid Humoudi CV.pdf"
             download
             className="px-7 py-3 text-xl border border-slate-400 rounded-xl bg-white/60 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition"
           >
